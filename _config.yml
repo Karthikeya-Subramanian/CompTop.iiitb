@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Karthikeya Subramanian"
+title                    : "Graph Geometry and Topology Lab"
 title_separator          : "-"
 name                     : &name "karthikeya Subramanian"
 description              : &description "Tell me a number"
