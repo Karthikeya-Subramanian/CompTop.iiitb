@@ -1,13 +1,13 @@
 ---
 permalink: /
-title: "Theoretical Computer Science and Computational Geometry Lab"
+title: "Graph Geometry And Topology Lab"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-Welcome to the Theoretical Computer Science and Computational Geometry Lab at IIIT Bangalore. Our research focuses on various aspects of theoretical computer science, computational geometry, topological data analysis, and scientific visualization.
+Welcome to the Graph Geometry And Topology Lab at IIIT Bangalore. Our research focuses on various aspects of theoretical computer science, computational geometry, topological data analysis, and scientific visualization.
 
 Faculty
 ======
