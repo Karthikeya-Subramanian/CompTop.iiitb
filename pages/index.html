@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Geometry and Topology Lab</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+</head>
+<body>
+    {% include header.html %}
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Welcome to Graph Geometry and Topology Lab</h1>
+            <p class="lead">Advancing mathematical research at the intersection of graph theory, geometry, and topology.</p>
+        </div>
+    </section>
+
+    <!-- Research Highlights -->
+    <section class="container">
+        <h2>Research Areas</h2>
+        <div class="grid grid-3">
+            <div class="card">
+                <h3>Graph Theory</h3>
+                <p>Exploring structural properties of graphs and their applications to complex networks.</p>
+                <a href="/pages/research.html#graph-theory" class="button">Learn More</a>
+            </div>
+            <div class="card">
+                <h3>Geometry</h3>
+                <p>Investigating geometric structures and their relationships to other mathematical domains.</p>
+                <a href="/pages/research.html#geometry" class="button">Learn More</a>
+            </div>
+            <div class="card">
+                <h3>Topology</h3>
+                <p>Studying topological spaces and their applications in modern mathematics.</p>
+                <a href="/pages/research.html#topology" class="button">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News -->
+    <section class="container">
+        <h2>Latest News</h2>
+        <div class="news-grid">
+            {% include latest-news.html limit=3 %}
+        </div>
+        <a href="/pages/news.html" class="button">View All News</a>
+    </section>
+
+    <!-- Recent Publications -->
+    <section class="container">
+        <h2>Recent Publications</h2>
+        <div class="publications-preview">
+            {% include recent-publications.html limit=5 %}
+        </div>
+        <a href="/pages/publications.html" class="button">View All Publications</a>
+    </section>
+
+    {% include footer.html %}
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>

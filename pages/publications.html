@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Graph Geometry and Topology Lab</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+</head>
+<body>
+    {% include header.html %}
+
+    <main class="container">
+        <h1>Publications</h1>
+
+        <!-- Publication Filters -->
+        <div class="filters">
+            <button class="button publication-filter active" data-filter="all">All</button>
+            <button class="button publication-filter" data-filter="graph-theory">Graph Theory</button>
+            <button class="button publication-filter" data-filter="geometry">Geometry</button>
+            <button class="button publication-filter" data-filter="topology">Topology</button>
+        </div>
+
+        <!-- Publications List -->
+        <div class="publications-list">
+            <!-- 2024 Publications -->
+            <section>
+                <h2>2024</h2>
+                <div class="publication-year">
+                    {% include_markdown publications/2024.md %}
+                </div>
+            </section>
+
+            <!-- 2023 Publications -->
+            <section>
+                <h2>2023</h2>
+                <div class="publication-year">
+                    {% include_markdown publications/2023.md %}
+                </div>
+            </section>
+        </div>
+    </main>
+
+    {% include footer.html %}
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
