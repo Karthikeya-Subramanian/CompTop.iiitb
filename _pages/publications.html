@@ -6,31 +6,41 @@ author_profile: true
 ---
 
 {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+  <div class="wordwrap">You can also find our articles on our respective Google Scholar profiles.</div>
 {% endif %}
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+Dr. Amit Chattopadhyay's Publications
+======
 
+Preprints
+------
+* An Algorithm for Fast and Correct Computation of Reeb Spaces for PL Bivariate Fields. Amit Chattopadhyay, Yashwanth Ramamurthi, Osamu Saeki. arXiv:2403.06564.
+* Image complexity based fMRI-BOLD visual network categorization across visual datasets using topological descriptors and deep-hybrid learning. Debanjali Bhattacharya, Neelam Sinha, Yashwanth R., Amit Chattopadhyay. arXiv:2311.08417.
+* A Topological Distance Measure between Multi-Fields for Classification and Analysis of Shapes and Data. Yashwanth Ramamurthi, Amit Chattopadhyay. arXiv:2303.02902.
 
+Selected Journal Publications
+------
+* A Topological Distance between Multi-fields based on Multi-Dimensional Persistence Diagrams. Yashwanth Ramamurthi, Amit Chattopadhyay. IEEE TVCG, Sept 2023.
+* Certified Computation of planar Morse-Smale Complexes. A. Chattopadhyay, G. Vegter and C. K. Yap. Journal of Symbolic Computation, Volume 78, 2017.
+* Multivariate Topology Simplification. A. Chattopadhyay, H. Carr, D. Duke, Z. Geng, and O. Saeki. Computational Geometry: Theory and Applications, Volume 58, 2016.
 
+Dr. Pradeesha Ashok's Publications
+======
+
+Journal Publications
+------
+* Structural Parameterization of Minimum Conflict free Coloring. Pradeesha Ashok, et al. Discrete Applied Mathematics, 319:239-253, 2022.
+* Geometric Separability using Orthogonal Objects. V P Abidha, Pradeesha Ashok. Information Processing Letters, 176:106245, 2022.
+* Exact Multi-Covering problems with Geometric Sets. Pradeesha Ashok, et al. Theory of Computing Systems, 66(1):89-113, 2022.
+* Exact and Fixed Parameter Tractable Algorithms for Max-Conflict-Free Coloring in Hypergraphs. Pradeesha Ashok, et al. SIAM Journal on Discrete Mathematics, 32(2):1189-1208, 2018.
+
+Selected Conference Publications
+------
+* Burn and Win. Pradeesha Ashok, et al. IWOCA 2023, Tainan, Taiwan.
+* Colouring a Dominating Set without Conflicts: q-subset square colouring. V P Abidha, Pradeesha Ashok, et al. CSR 2022.
+* Local Search Strikes Again: PTAS for Variants of Geometric Covering and Packing. Pradeesha Ashok, et al. COCOON 2017.
+* Exact Algorithms for Terrain Guarding. Pradeesha Ashok, et al. Symposium on Computational Geometry 2017.
+
+For complete publication lists and more details, please visit our respective Google Scholar profiles.
